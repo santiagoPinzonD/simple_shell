@@ -1,0 +1,137 @@
+.TH SIMPLE_SHELL 1 "AUGUST 2020" "Version 1.0" "SHELL General Comands Manual"
+
+.SH NAME
+.B Simple Shell
+- Command interpreter
+
+.SH SYNOPSIS
+.B [Command] [-OPTIONS] [FILE]
+
+
+.SH DESCRIPTION
+.B Simple Shell
+- Is an interpreter of commands for Linux. It is similar to the functionality of sh, together with its outputs and errors.
+.Nm ./hsh
+
+.PP
+In the interactive mode it will increment the line counter, if a command cannot be found or executed it will return the line counter, and the respective error message immediately and if it can be executed it will also increment a line counter that is only shown in cases of error.
+
+also works in non-interactive mode, this means that when the command is sent it will be executed and you will immediately exit our program
+
+.SH RETURN VALUE
+
+If everything was successful our return 0 program.
+
+.SH OPTIONS
+.B [^C]
+this is printed on the screen
+
+.B [^D]
+- this makes a clean exit from our progr
+
+.B [exit]
+- exits the shell
+
+.SH ENVIRONMENT
+It automatically searches you local PATH variable and sets it.
+
+
+.SH EXIT STATUS
+
+It conforms to the standard error codes of Linux, we talk about the POSIX.
+
+.SH EXAMPLES
+.B $ls
+
+_array_this.c  _concat.c  _getenv.c  man_1_simple_shell  README.md      shell.c    _strcpy.c
+AUTHORS        error.c    _itoa.c    minishell.h         _searchpath.c  _strcmp.c  _strdup.c
+
+.B $/bin/ls
+
+_array_this.c  _concat.c  _getenv.c  man_1_simple_shell  README.md      shell.c    _strcpy.c
+AUTHORS        error.c    _itoa.c    minishell.h         _searchpath.c  _strcmp.c  _strdup.c
+
+.B $ls -l
+
+total 72
+
+-rwxrwxr-x 1 vagrant vagrant 14169 Aug 18 19:50 a.out
+
+-rw-rw-r-- 1 vagrant vagrant   432 Aug 18 02:10 _array_this.c
+
+-rw-rw-r-- 1 vagrant vagrant   313 Aug 18 16:11 AUTHORS
+
+-rw-rw-r-- 1 vagrant vagrant   719 Aug 18 01:27 _concat.c
+
+-rw-rw-r-- 1 vagrant vagrant   652 Aug 18 00:17 error.c
+
+-rw-rw-r-- 1 vagrant vagrant   687 Aug 18 16:11 _getenv.c
+
+-rw-rw-r-- 1 vagrant vagrant   551 Aug 17 22:45 _itoa.c
+
+-rwxrwxr-x 1 vagrant vagrant  1559 Aug 18 19:48 man_1_simple_shell
+
+-rw-rw-r-- 1 vagrant vagrant   671 Aug 18 01:40 minishell.h
+
+-rw-rw-r-- 1 vagrant vagrant    70 Aug 14 15:28 README.md
+
+-rw-rw-r-- 1 vagrant vagrant   800 Aug 18 03:54 _searchpath.c
+
+-rw-rw-r-- 1 vagrant vagrant  1511 Aug 18 16:11 shell.c
+
+-rw-rw-r-- 1 vagrant vagrant   371 Aug 17 22:48 _strcmp.c
+
+-rw-rw-r-- 1 vagrant vagrant   327 Aug 18 16:11 _strcpy.c
+
+-rw-rw-r-- 1 vagrant vagrant   442 Aug 18 16:11 _strdup.c
+
+.B $/bin/ls -l
+
+total 72
+
+-rwxrwxr-x 1 vagrant vagrant 14169 Aug 18 19:50 a.out
+
+-rw-rw-r-- 1 vagrant vagrant   432 Aug 18 02:10 _array_this.c
+
+-rw-rw-r-- 1 vagrant vagrant   313 Aug 18 16:11 AUTHORS
+
+-rw-rw-r-- 1 vagrant vagrant   719 Aug 18 01:27 _concat.c
+
+-rw-rw-r-- 1 vagrant vagrant   652 Aug 18 00:17 error.c
+
+-rw-rw-r-- 1 vagrant vagrant   687 Aug 18 16:11 _getenv.c
+
+-rw-rw-r-- 1 vagrant vagrant   551 Aug 17 22:45 _itoa.c
+
+-rwxrwxr-x 1 vagrant vagrant  1559 Aug 18 19:48 man_1_simple_shell
+
+-rw-rw-r-- 1 vagrant vagrant   671 Aug 18 01:40 minishell.h
+
+-rw-rw-r-- 1 vagrant vagrant    70 Aug 14 15:28 README.md
+
+-rw-rw-r-- 1 vagrant vagrant   800 Aug 18 03:54 _searchpath.c
+
+-rw-rw-r-- 1 vagrant vagrant  1511 Aug 18 16:11 shell.c
+
+-rw-rw-r-- 1 vagrant vagrant   371 Aug 17 22:48 _strcmp.c
+
+-rw-rw-r-- 1 vagrant vagrant   327 Aug 18 16:11 _strcpy.c
+
+-rw-rw-r-- 1 vagrant vagrant   442 Aug 18 16:11 _strdup.c
+
+.SH SEE ALSO
+
+sh(1)
+
+.SH BUGS
+
+unknowns
+
+.SH AUTHORS
+
+.NM
+
+.PP
+Santiago Pinzon Dominguez - https://github.com/santiagoPinzonD
+.PP
+Julian Alvarez Caro - https://github.com/julianalvarezcaro
