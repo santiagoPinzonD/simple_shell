@@ -80,7 +80,7 @@ void conditions(char *argv, char *entry, int *retVal, int *count)
  *
  * @route: route where the command is located
  * @av: array where the route and arguments are stored
- *
+ * @retVal: return of value
  * Return: void
  */
 void create_child(char *route, char **av, int *retVal)
